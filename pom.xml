@@ -224,7 +224,7 @@
         <buildLabel>${project.version}</buildLabel>
         <buildEnv>developer</buildEnv>
         <me2Version>2.0.3</me2Version>
-        <pyx4meVersion>2.0.3</pyx4meVersion>
+        <pyx4meVersion>2.0.4</pyx4meVersion>
         <!-- See OS X profile -->
         <javaRunTimeJar>${java.home}/lib/rt.jar</javaRunTimeJar>
         <javaRunTimeSecurityJar>${java.home}/lib/jsse.jar</javaRunTimeSecurityJar>
@@ -362,8 +362,8 @@
                             <tasks>
                                 <!-- Set build number -->
                                 <replace dir="${project.build.directory}/site">
-                                    <include name="*.html"></include>
-                                    <include name="tck/*.html"></include>
+                                    <include name="*.html"/>
+                                    <include name="tck/*.html"/>
                                     <replacefilter token="#remove#" value=""/>
                                     <replacefilter token="#build#" value="${buildLabel}"/>
                                     <replacefilter token="#version#" value="${project.version}"/>
