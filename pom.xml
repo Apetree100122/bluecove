@@ -237,7 +237,7 @@
                 <dependency>
                     <groupId>log4j</groupId>
                     <artifactId>log4j</artifactId>
-                    <version>1.2.14</version>
+                    <version>1.2.17</version>
                 </dependency>
                <dependency>
                     <groupId>junit</groupId>
@@ -362,8 +362,8 @@
                             <tasks>
                                 <!-- Set build number -->
                                 <replace dir="${project.build.directory}/site">
-                                    <include name="*.html"></include>
-                                    <include name="tck/*.html"></include>
+                                    <include name="*.html"/>
+                                    <include name="tck/*.html"/>
                                     <replacefilter token="#remove#" value=""/>
                                     <replacefilter token="#build#" value="${buildLabel}"/>
                                     <replacefilter token="#version#" value="${project.version}"/>
